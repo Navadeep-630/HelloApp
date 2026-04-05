@@ -1,13 +1,16 @@
 package helloapp;
 public class HelloApp {
     public static void main(String[] args) {
+        
+        // Check if arguments are passed
         if (args.length > 0) {
-            System.out.print("Hello ");
-            for (String arg : args) {
-                System.out.print(arg + " ");
+            // Enhanced for loop to iterate through arguments
+            for (String name : args) {
+                System.out.println("Hello " + name);
             }
         } else {
-            System.out.println("Hello");
+            // Default message if no arguments are passed
+            System.out.println("Hello User");
         }
     }
 }
